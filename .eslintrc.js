@@ -39,5 +39,12 @@ module.exports = {
       },
     ],
     'unused-imports/no-unused-imports-ts': 'warn',
+    'react/self-closing-comp': [
+      'error',
+      {
+        component: true,
+        html: true,
+      },
+    ],
   },
 }
