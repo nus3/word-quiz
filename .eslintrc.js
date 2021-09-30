@@ -9,9 +9,35 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  plugins: ['unused-imports'],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'next/core-web-vitals',
     'prettier',
   ],
+  rules: {
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling'],
+          'object',
+          'type',
+          'index',
+        ],
+        'newlines-between': 'always',
+        pathGroupsExcludedImportTypes: ['builtin'],
+        alphabetize: { order: 'asc', caseInsensitive: true },
+        pathGroups: [
+          { pattern: 'components/**', group: 'internal', position: 'before' },
+          // styles
+          { pattern: './**.module.css', group: 'index', position: 'before' },
+        ],
+      },
+    ],
+    'unused-imports/no-unused-imports-ts': 'warn',
+  },
 }
