@@ -1,0 +1,8 @@
+.button {
+  transition: background-color 0.3s ease;
+  @apply p-4 w-40 bg-primary rounded bg-opacity-60 border border-primary text-textBase;
+
+  &:hover {
+    @apply bg-opacity-80;
+  }
+}
