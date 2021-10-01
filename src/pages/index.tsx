@@ -1,14 +1,20 @@
 import { NextPage } from 'next'
+import { useRouter } from 'next/router'
 
+import { IndexContent } from 'components/IndexContent'
 import { Layout } from 'components/Layout'
 
 const IndexPage: NextPage = () => {
+  const { push } = useRouter()
+
+  const handleQuiz = () => undefined
+  const handleAnswers = () => {
+    push('/answers')
+  }
+
   return (
     <Layout>
-      <div>
-        <h1>Almost before we knew it, we had left the gr</h1>
-        <h2>人類社会のすべての構成員の固有の尊厳と</h2>
-      </div>
+      <IndexContent onClickAnswers={handleAnswers} onClickQuiz={handleQuiz} />
     </Layout>
   )
 }
