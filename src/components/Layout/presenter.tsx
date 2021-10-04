@@ -26,7 +26,9 @@ export const LayoutPresenter: FC<LayoutPresenterProps> = ({
       </main>
       <footer className={styles.footer}>
         <Link href="/" passHref>
-          <BsSun className={styles['footer-icon']} />
+          <a>
+            <BsSun className={styles['footer-icon']} />
+          </a>
         </Link>
       </footer>
     </div>
