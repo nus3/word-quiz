@@ -4,15 +4,11 @@ import { useRouter } from 'next/router'
 import { IndexContent } from 'components/IndexContent'
 import { Layout } from 'components/Layout'
 
-import { WordRepoMockImpl } from 'repositories/wordMock'
-
 const IndexPage: NextPage = () => {
   const { push } = useRouter()
 
-  const handleQuiz = async () => {
-    const repo = new WordRepoMockImpl()
-    const words = await repo.getWords()
-    console.log(words)
+  const handleQuiz = () => {
+    push('/quiz')
   }
   const handleAnswers = () => {
     push('/answers')
