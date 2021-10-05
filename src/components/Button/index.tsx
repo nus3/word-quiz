@@ -5,10 +5,11 @@ import { ButtonPresenter } from 'components/Button/presenter'
 
 export type ButtonProps = {
   label: string
-  onClick: () => void
+  onClick?: () => void
+  disabled?: boolean
 }
 
-export const Button: FC<ButtonProps> = ({ label, onClick }) => {
-  const props = useButtonContainer({ label, onClick })
+export const Button: FC<ButtonProps> = ({ label, onClick, disabled }) => {
+  const props = useButtonContainer({ label, onClick, disabled })
   return <ButtonPresenter {...props} />
 }

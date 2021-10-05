@@ -1539,6 +1539,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"classnames@npm:2.3.1":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1"
+  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
@@ -5101,6 +5108,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-hook-form@npm:7.17.0":
+  version: 7.17.0
+  resolution: "react-hook-form@npm:7.17.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17
+  checksum: 554064ec1081ce4c652ab7e6cb85e6d1bc16a72fa7275cc93b8c8ba9abecd22b2e15d36cbfd31f2e1aa973f9e40c360334f19e926ce282659907dceb6bc95485
+  languageName: node
+  linkType: hard
+
 "react-icons@npm:4.2.0":
   version: 4.2.0
   resolution: "react-icons@npm:4.2.0"
@@ -6479,6 +6495,7 @@ typescript@4.4.3:
     "@typescript-eslint/experimental-utils": 4.32.0
     "@typescript-eslint/parser": 4.32.0
     autoprefixer: 10.3.6
+    classnames: 2.3.1
     eslint: 7.32.0
     eslint-config-next: 11.1.2
     eslint-config-prettier: 8.3.0
@@ -6493,6 +6510,7 @@ typescript@4.4.3:
     prettier: 2.4.1
     react: 17.0.2
     react-dom: 17.0.2
+    react-hook-form: 7.17.0
     react-icons: 4.2.0
     tailwindcss: 2.2.16
     typescript: 4.4.3

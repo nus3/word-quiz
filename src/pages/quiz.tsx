@@ -1,5 +1,6 @@
 import { NextPage, GetServerSideProps } from 'next'
 
+import { AnswerForm, AnswerFormValues } from 'components/AnswerForm'
 import { Layout } from 'components/Layout'
 
 import { Words } from 'repositories/word'
@@ -10,8 +11,17 @@ type QuizPageProps = {
 }
 
 const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
-  console.log(words)
-  return <Layout>回答画面だよ</Layout>
+  console.log({ words })
+
+  const handleSubmit = (values: AnswerFormValues) => {
+    console.log({ values })
+  }
+
+  return (
+    <Layout>
+      <AnswerForm onSubmit={handleSubmit} word="as long as" />
+    </Layout>
+  )
 }
 
 export default QuizPage

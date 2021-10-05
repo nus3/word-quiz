@@ -15,7 +15,11 @@ export const LayoutPresenter: FC<LayoutPresenterProps> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <header className={styles.header}>Word Quiz</header>
+      <header className={styles.header}>
+        <Link href="/" passHref>
+          タンゴ
+        </Link>
+      </header>
       <main className={styles.main}>
         {/* TODO: loadingコンポーネント作る */}
         {loading ? (

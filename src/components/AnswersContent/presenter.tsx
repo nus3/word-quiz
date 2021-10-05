@@ -13,6 +13,7 @@ export const AnswersContentPresenter: FC<AnswersContentPresenterProps> = ({
 }) => {
   return (
     <ul className={styles.wrap}>
+      {/* TODO:(nus3) 無限スクロールの実装 */}
       {/* HACK:(nus3) wordsのobjectなおす */}
       {words.words.map((w) => (
         <li className={styles.item} key={w.word}>

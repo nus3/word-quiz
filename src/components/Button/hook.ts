@@ -6,9 +6,11 @@ type Params = ButtonProps
 export const useButtonContainer = ({
   onClick,
   label,
+  disabled,
 }: Params): ButtonPresenterProps => {
   return {
     onClick,
     label,
+    disabled,
   }
 }

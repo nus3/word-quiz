@@ -5,4 +5,11 @@
   &:hover {
     @apply bg-opacity-80;
   }
+
+  &.disabled {
+    @apply bg-bgFooter text-textDark border-bgFooter cursor-not-allowed shadow-none;
+    &:hover {
+      @apply bg-bgFooter;
+    }
+  }
 }
