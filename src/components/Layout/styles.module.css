@@ -9,7 +9,7 @@
 
 .header {
   grid-area: header;
-  @apply flex items-center justify-between w-full h-16 p-2 px-5 sm:px-10 pt-5 text-accentYellow text-4xl font-bold z-10;
+  @apply fixed flex items-center justify-between w-full h-16 p-2 px-5 sm:px-10 pt-5 bg-bgBase text-accentYellow text-4xl font-bold z-10;
 }
 
 .main {

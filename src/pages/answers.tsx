@@ -1,16 +1,34 @@
-import { NextPage } from 'next'
+import { GetServerSideProps, NextPage } from 'next'
 
+import { AnswersContent } from 'components/AnswersContent'
 import { Layout } from 'components/Layout'
 
-const IndexPage: NextPage = () => {
+import { Words } from 'repositories/word'
+import { WordRepoMockImpl } from 'repositories/wordMock'
+
+type AnswersPageProps = {
+  words: Words
+}
+
+const AnswersPage: NextPage<AnswersPageProps> = ({ words }) => {
   return (
     <Layout>
-      <div>
-        <h1>Almost before we knew it, we had left the gr</h1>
-        <h2>人類社会のすべての構成員の固有の尊厳と</h2>
-      </div>
+      <AnswersContent words={words} />
     </Layout>
   )
 }
 
-export default IndexPage
+export default AnswersPage
+
+export const getServerSideProps: GetServerSideProps<AnswersPageProps> =
+  async () => {
+    const repo = new WordRepoMockImpl()
+    const words = await repo.getWords()
+
+    return {
+      props: {
+        words,
+        test: 'aa',
+      },
+    }
+  }

@@ -19,12 +19,11 @@ export default QuizPage
 export const getServerSideProps: GetServerSideProps<QuizPageProps> =
   async () => {
     const repo = new WordRepoMockImpl()
-    const words = await repo.getWords()
+    const words = await repo.getRandomWords()
 
     return {
       props: {
         words,
-        test: 'aa',
       },
     }
   }

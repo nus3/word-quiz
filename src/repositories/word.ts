@@ -12,6 +12,7 @@ export type Words = {
 
 export interface WordRepository {
   getWords(): Promise<Words>
+  getRandomWords(): Promise<Words>
 }
 
 const QUIZ_COUNT = 10
@@ -20,6 +21,12 @@ export class WordRepoImpl implements WordRepository {
   public async getWords(): Promise<Words> {
     const contentStr = await getGistContent()
     // HACK:(nus3) 良い子はタイプガートとかすること
+    const content = JSON.parse(contentStr) as Words
+    return content
+  }
+
+  public async getRandomWords(): Promise<Words> {
+    const contentStr = await getGistContent()
     const content = JSON.parse(contentStr) as Words
 
     const indexes = randomIndexes(QUIZ_COUNT, content.words.length)
