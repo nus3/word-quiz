@@ -1,4 +1,4 @@
-import { Word, WordRepository, Words } from 'repositories/word'
+import { QUIZ_COUNT, Word, WordRepository, Words } from 'repositories/word'
 import { randomIndexes } from 'utils/random'
 
 const w: Word[] = [...Array(50)].map((_, i) => ({
@@ -34,7 +34,7 @@ export class WordRepoMockImpl implements WordRepository {
   }
 
   public getRandomWords(): Promise<Words> {
-    const indexes = randomIndexes(5, dummyWords.length)
+    const indexes = randomIndexes(QUIZ_COUNT, dummyWords.length)
     // HACK:(nus3) 配列の要素があるかどうかのチェック
     const w = indexes.map((i) => dummyWords[i])
     const words: Words = {

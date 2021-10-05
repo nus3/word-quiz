@@ -19,7 +19,9 @@ export const AnswerFormPresenter: FC<AnswerFormPresenterProps> = ({
   return (
     <form className={styles.wrap}>
       <p className={styles.word}>{word}</p>
-      <input {...register} className={styles.input} />
+      <input {...register} className={styles.input} autoComplete="off" />
+      {/* NOTE:(nus3) enterでのsubmit防止用 */}
+      <input type="text" className="hidden" />
       <Button
         onClick={() => {
           onSubmit()

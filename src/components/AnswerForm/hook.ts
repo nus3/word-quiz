@@ -9,7 +9,7 @@ export const useAnswerFormContainer = ({
   onSubmit,
   word,
 }: Params): AnswerFormPresenterProps => {
-  const { register, getValues } = useForm<AnswerFormValues>({
+  const { register, getValues, reset } = useForm<AnswerFormValues>({
     defaultValues: {
       answer: '',
     },
@@ -17,6 +17,7 @@ export const useAnswerFormContainer = ({
 
   const handleSubmit = () => {
     onSubmit(getValues())
+    reset()
   }
 
   return {

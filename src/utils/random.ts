@@ -10,6 +10,7 @@ const getRandomInt = (max: number) => {
  * @return {number[]} - randomなindexの配列
  */
 export const randomIndexes = (len: number, max: number): number[] => {
+  // TODO:(nus3) ちょくちょく配列のレンジでエラー出るのでバグってる なおす
   if (len > max) {
     return []
   }

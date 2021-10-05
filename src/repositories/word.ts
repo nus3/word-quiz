@@ -15,7 +15,7 @@ export interface WordRepository {
   getRandomWords(): Promise<Words>
 }
 
-const QUIZ_COUNT = 10
+export const QUIZ_COUNT = 10
 
 export class WordRepoImpl implements WordRepository {
   public async getWords(): Promise<Words> {
