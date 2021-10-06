@@ -9,10 +9,15 @@ export type AnswerFormValues = {
 
 export type AnswerFormProps = {
   onSubmit: (values: AnswerFormValues) => void
+  onClickViewAnswer: () => void
   word: string
 }
 
-export const AnswerForm: FC<AnswerFormProps> = ({ onSubmit, word }) => {
-  const props = useAnswerFormContainer({ onSubmit, word })
+export const AnswerForm: FC<AnswerFormProps> = ({
+  onSubmit,
+  onClickViewAnswer,
+  word,
+}) => {
+  const props = useAnswerFormContainer({ onSubmit, onClickViewAnswer, word })
   return <AnswerFormPresenter {...props} />
 }

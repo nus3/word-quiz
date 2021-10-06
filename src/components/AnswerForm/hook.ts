@@ -8,6 +8,7 @@ type Params = AnswerFormProps
 export const useAnswerFormContainer = ({
   onSubmit,
   word,
+  onClickViewAnswer,
 }: Params): AnswerFormPresenterProps => {
   const { register, getValues, reset } = useForm<AnswerFormValues>({
     defaultValues: {
@@ -24,5 +25,6 @@ export const useAnswerFormContainer = ({
     register: register('answer', { required: true }),
     onSubmit: handleSubmit,
     word,
+    onClickViewAnswer,
   }
 }

@@ -16,3 +16,7 @@
     @apply border-primary;
   }
 }
+
+.btn-wrap {
+  @apply flex gap-5 items-center justify-center;
+}

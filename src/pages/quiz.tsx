@@ -33,12 +33,20 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
     // HACK:(nus3) nullだったらbuttonをdisabledにする
     if (values.answer === '') return
 
+    // HACK:(nus3) findIndexでundefinedの場合のエラー処理する
     const currentQuiz = state.words[state.index]
     const collect = currentQuiz.answers.includes(values.answer)
 
     dispatch({
       type: QuizActionType.Answer,
       payload: { collect },
+    })
+  }
+
+  const handleViewAnswer = () => {
+    dispatch({
+      type: QuizActionType.Answer,
+      payload: { collect: false },
     })
   }
 
@@ -69,7 +77,11 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
     <Layout>
       {state.isAnswer ? (
         <>
-          <AnswerForm onSubmit={handleSubmit} word={state.word} />
+          <AnswerForm
+            onSubmit={handleSubmit}
+            word={state.word}
+            onClickViewAnswer={handleViewAnswer}
+          />
           <Modal
             collect={state.collect}
             onClickClose={handleCloseModal}
