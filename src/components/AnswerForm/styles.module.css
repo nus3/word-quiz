@@ -1,0 +1,22 @@
+.wrap {
+  @apply flex flex-col items-center justify-center h-full w-full text-2xl;
+}
+
+.word {
+  @apply text-4xl font-bold text-primary mb-14;
+}
+
+.input {
+  @apply w-full h-14 leading-5 p-2 rounded-sm border border-textDark text-textBase bg-bgFooter text-xl mb-8;
+
+  &:focus {
+    @apply outline-none border-primary;
+  }
+  &:hover {
+    @apply border-primary;
+  }
+}
+
+.btn-wrap {
+  @apply flex gap-5 items-center justify-center;
+}

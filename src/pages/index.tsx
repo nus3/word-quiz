@@ -1,10 +1,23 @@
 import { NextPage } from 'next'
+import { useRouter } from 'next/router'
+
+import { IndexContent } from 'components/IndexContent'
+import { Layout } from 'components/Layout'
 
 const IndexPage: NextPage = () => {
+  const { push } = useRouter()
+
+  const handleQuiz = () => {
+    push('/quiz')
+  }
+  const handleAnswers = () => {
+    push('/answers')
+  }
+
   return (
-    <div>
-      <h1>hello world</h1>
-    </div>
+    <Layout>
+      <IndexContent onClickAnswers={handleAnswers} onClickQuiz={handleQuiz} />
+    </Layout>
   )
 }
 

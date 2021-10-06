@@ -1,0 +1,15 @@
+.overlay {
+  @apply fixed inset-0 bg-bgFooter bg-opacity-80;
+}
+
+.content {
+  @apply flex flex-col justify-center items-center w-[300px] h-[300px] p-5 bg-bgBase text-2xl;
+}
+
+.text {
+  @apply text-accentYellow text-5xl font-bold mb-5;
+}
+
+.answer {
+  @apply flex flex-col w-full text-textBase text-lg mb-10;
+}

@@ -1,0 +1,3 @@
+.wrap {
+  @apply flex flex-col gap-14 items-center justify-center h-full text-2xl;
+}
