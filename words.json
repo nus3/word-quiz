@@ -1,0 +1,17 @@
+{
+  "words": [
+    {"word": "as long as", "answers": ["だけずっと", "さえすれば", "する限り"]},
+    {"word": "continuous", "answers": ["連続的な", "切れ目のない", "とぎれない"]},
+    {"word": "disregard", "answers": ["無視する", "軽視する"]},
+    {"word": "enclose", "answers": ["取り囲む", "囲む", "囲い込む"]},
+    {"word": "revenue", "answers": ["収入", "総所得", "国税庁"]},
+    {"word": "readily", "answers": ["快く", "躊躇なく", "ちゅうちょなく", "容易に"]},
+    {"word": "identify", "answers": ["確認する", "見分ける", "証明する"]},
+    {"word": "scatter", "answers": ["ばら撒く", "散財する", "撒き散らす"]},
+    {"word": "consolidate", "answers": ["統合する", "固める", "強化する"]},
+    {"word": "whenever", "answers": ["する時にはいつも", "する時には必ず", "するたびに"]},
+    {"word": "tweak", "answers": ["ひねる", "つねる"]},
+    {"word": "mostly", "answers": ["大部分は", "たいてい", "たいていは"]},
+    {"word": "curios", "answers": ["好奇心の強い", "もの好きな", "せんさく好きな", "したがって"]}
+  ]
+}
