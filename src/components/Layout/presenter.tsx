@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FC, ReactNode } from 'react'
 import { BsSun } from 'react-icons/bs'
+import { DiGithubBadge } from 'react-icons/di'
 
 import styles from './styles.module.css'
 
@@ -13,12 +14,17 @@ export const LayoutPresenter: FC<LayoutPresenterProps> = ({
   children,
   loading,
 }) => {
+  const githubUrl = 'https://github.com/nus3/word-quiz'
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <Link href="/" passHref>
           タンゴ
         </Link>
+        <a href={githubUrl} target="_blank" rel="noreferrer noopener">
+          <DiGithubBadge className="text-accentYellow text-6xl" />
+        </a>
       </header>
       <main className={styles.main}>
         {/* TODO: loadingコンポーネント作る */}
