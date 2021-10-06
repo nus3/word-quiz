@@ -21,10 +21,15 @@ export const useAnswerFormContainer = ({
     reset()
   }
 
+  const handleViewAnswer = () => {
+    onClickViewAnswer()
+    reset()
+  }
+
   return {
     register: register('answer', { required: true }),
     onSubmit: handleSubmit,
     word,
-    onClickViewAnswer,
+    onClickViewAnswer: handleViewAnswer,
   }
 }
