@@ -34,8 +34,7 @@ export class WordRepoMockImpl implements WordRepository {
   }
 
   public getRandomWords(): Promise<Words> {
-    const indexes = randomIndexes(QUIZ_COUNT, dummyWords.length)
-    // HACK:(nus3) 配列の要素があるかどうかのチェック
+    const indexes = randomIndexes(QUIZ_COUNT, dummyWords.length - 1)
     const w = indexes.map((i) => dummyWords[i])
     const words: Words = {
       words: w,

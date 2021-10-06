@@ -29,7 +29,11 @@ export class WordRepoImpl implements WordRepository {
     const contentStr = await getGistContent()
     const content = JSON.parse(contentStr) as Words
 
-    const indexes = randomIndexes(QUIZ_COUNT, content.words.length)
+    if (!content || !content.words || !content.words?.length) {
+      return { words: [] }
+    }
+
+    const indexes = randomIndexes(QUIZ_COUNT, content.words.length - 1)
     const words = indexes.map((i) => content.words[i])
 
     return { words }

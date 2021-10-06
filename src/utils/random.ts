@@ -19,7 +19,7 @@ export const randomIndexes = (len: number, max: number): number[] => {
 
   const output = []
   for (let i = 0; i < len; i++) {
-    const ri = getRandomInt(indexes.length)
+    const ri = getRandomInt(indexes.length - 1)
     output.push(indexes[ri])
     indexes.splice(ri, 1)
   }
