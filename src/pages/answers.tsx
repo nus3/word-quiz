@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from 'next'
+import { NextSeo } from 'next-seo'
 
 import { AnswersContent } from 'components/AnswersContent'
 import { Layout } from 'components/Layout'
@@ -11,9 +12,12 @@ type AnswersPageProps = {
 
 const AnswersPage: NextPage<AnswersPageProps> = ({ words }) => {
   return (
-    <Layout>
-      <AnswersContent words={words} />
-    </Layout>
+    <>
+      <NextSeo title="タンゴ一覧" />
+      <Layout>
+        <AnswersContent words={words} />
+      </Layout>
+    </>
   )
 }
 

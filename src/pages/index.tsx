@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 
 import { IndexContent } from 'components/IndexContent'
@@ -15,9 +16,12 @@ const IndexPage: NextPage = () => {
   }
 
   return (
-    <Layout>
-      <IndexContent onClickAnswers={handleAnswers} onClickQuiz={handleQuiz} />
-    </Layout>
+    <>
+      <NextSeo title="TOPページ" />
+      <Layout>
+        <IndexContent onClickAnswers={handleAnswers} onClickQuiz={handleQuiz} />
+      </Layout>
+    </>
   )
 }
 
