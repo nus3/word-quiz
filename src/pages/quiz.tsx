@@ -1,4 +1,5 @@
 import { NextPage, GetServerSideProps } from 'next'
+import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 import { useEffect, useReducer } from 'react'
 
@@ -74,29 +75,32 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
   }
 
   return (
-    <Layout>
-      {state.isAnswer ? (
-        <>
-          <AnswerForm
-            onSubmit={handleSubmit}
-            word={state.word}
-            onClickViewAnswer={handleViewAnswer}
+    <>
+      <NextSeo title="回答" />
+      <Layout>
+        {state.isAnswer ? (
+          <>
+            <AnswerForm
+              onSubmit={handleSubmit}
+              word={state.word}
+              onClickViewAnswer={handleViewAnswer}
+            />
+            <Modal
+              collect={state.collect}
+              onClickClose={handleCloseModal}
+              open={state.open}
+              answers={state.currentAnswers}
+            />
+          </>
+        ) : (
+          <ResultContent
+            onClickBack={handleBack}
+            onClickRetry={handleRetry}
+            results={state.results}
           />
-          <Modal
-            collect={state.collect}
-            onClickClose={handleCloseModal}
-            open={state.open}
-            answers={state.currentAnswers}
-          />
-        </>
-      ) : (
-        <ResultContent
-          onClickBack={handleBack}
-          onClickRetry={handleRetry}
-          results={state.results}
-        />
-      )}
-    </Layout>
+        )}
+      </Layout>
+    </>
   )
 }
 
