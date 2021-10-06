@@ -6,6 +6,7 @@ export enum QuizActionType {
   Answer = 'Answer',
   NextAnswer = 'NextAnswer',
   Complete = 'Complete',
+  Retry = 'Retry',
 }
 
 export type QuizAction =
@@ -22,4 +23,7 @@ export type QuizAction =
     }
   | {
       type: QuizActionType.Complete
+    }
+  | {
+      type: QuizActionType.Retry
     }

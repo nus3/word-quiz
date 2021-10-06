@@ -1,9 +1,11 @@
 import { NextPage, GetServerSideProps } from 'next'
+import { useRouter } from 'next/router'
 import { useEffect, useReducer } from 'react'
 
 import { AnswerForm, AnswerFormValues } from 'components/AnswerForm'
 import { Layout } from 'components/Layout'
 import { Modal } from 'components/Modal'
+import { ResultContent } from 'components/ResultContent'
 
 import { QUIZ_COUNT, Words } from 'repositories/word'
 import { WordRepoMockImpl } from 'repositories/wordMock'
@@ -17,6 +19,8 @@ type QuizPageProps = {
 
 const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
   const [state, dispatch] = useReducer(quizReducer, initQuizState)
+
+  const { push } = useRouter()
 
   useEffect(() => {
     dispatch({
@@ -41,13 +45,10 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
 
   const handleCloseModal = () => {
     if (state.results.length === QUIZ_COUNT) {
-      console.log(state.results)
-      console.log(state)
       dispatch({
         type: QuizActionType.Complete,
       })
       return
-      // TODO:(nus3) 結果contentの表示
     }
 
     dispatch({
@@ -55,14 +56,34 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
     })
   }
 
+  const handleBack = () => {
+    push('/')
+  }
+
+  const handleRetry = () => {
+    dispatch({
+      type: QuizActionType.Retry,
+    })
+  }
+
   return (
     <Layout>
-      <AnswerForm onSubmit={handleSubmit} word={state.word} />
-      <Modal
-        collect={state.collect}
-        onClickClose={handleCloseModal}
-        open={state.open}
-      />
+      {state.isAnswer ? (
+        <>
+          <AnswerForm onSubmit={handleSubmit} word={state.word} />
+          <Modal
+            collect={state.collect}
+            onClickClose={handleCloseModal}
+            open={state.open}
+          />
+        </>
+      ) : (
+        <ResultContent
+          onClickBack={handleBack}
+          onClickRetry={handleRetry}
+          results={state.results}
+        />
+      )}
     </Layout>
   )
 }

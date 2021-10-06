@@ -6,6 +6,7 @@ import { answer } from 'states/quiz/reducers/answer'
 import { complete } from 'states/quiz/reducers/complete'
 import { initialLoad } from 'states/quiz/reducers/initial-load'
 import { nextAnswer } from 'states/quiz/reducers/next-answer'
+import { retry } from 'states/quiz/reducers/retry'
 
 export const quizReducer: Reducer<QuizState, QuizAction> = (state, action) => {
   switch (action.type) {
@@ -17,6 +18,8 @@ export const quizReducer: Reducer<QuizState, QuizAction> = (state, action) => {
       return nextAnswer(state)
     case QuizActionType.Complete:
       return complete(state)
+    case QuizActionType.Retry:
+      return retry(state)
 
     default:
       throw new Error(`unexpected action type. ${action}`)
