@@ -16,7 +16,7 @@ export const IndexContentPresenter: FC<IndexContentPresenterProps> = ({
   return (
     <section className={styles.wrap}>
       <Button label="回答する" onClick={onClickQuiz} />
-      <Button label="答えを見る" onClick={onClickAnswers} />
+      <Button label="タンゴ一覧" onClick={onClickAnswers} />
     </section>
   )
 }
