@@ -10,14 +10,17 @@ export type ModalPresenterProps = {
   open: boolean
   onCloseModal: () => void
   collect: boolean
+  answerText: string
 }
 
 export const ModalPresenter: FC<ModalPresenterProps> = ({
   open,
   onCloseModal,
   collect,
+  answerText,
 }: ModalPresenterProps) => {
   return (
+    // HACK:(nus3) modalとmodalのcontentでコンポーネント分ける
     <Transition appear show={open} as={Fragment}>
       <Dialog
         as="div"
@@ -48,6 +51,10 @@ export const ModalPresenter: FC<ModalPresenterProps> = ({
             <div className="inline-block overflow-hidden transition-all transform bg-white shadow-xl rounded-md">
               <div className={styles.content}>
                 <p className={styles.text}>{collect ? '正解' : '不正解'}</p>
+                <p className={styles.answer}>
+                  <span className="font-normal text-sm">解答例：</span>
+                  <span className="ml-3">{answerText}</span>
+                </p>
                 <Button onClick={onCloseModal} label="次へ" />
               </div>
             </div>

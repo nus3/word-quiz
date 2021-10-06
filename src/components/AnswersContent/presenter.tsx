@@ -18,7 +18,7 @@ export const AnswersContentPresenter: FC<AnswersContentPresenterProps> = ({
       {words.words.map((w) => (
         <li className={styles.item} key={w.word}>
           <p className={styles.word}>{w.word}</p>
-          <p className={styles.answers}>{w.answers.join(', ')}</p>
+          <p className={styles.answers}>{w.answers.join('、')}</p>
         </li>
       ))}
     </ul>

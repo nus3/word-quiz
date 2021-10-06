@@ -7,8 +7,7 @@ import { Layout } from 'components/Layout'
 import { Modal } from 'components/Modal'
 import { ResultContent } from 'components/ResultContent'
 
-import { QUIZ_COUNT, Words } from 'repositories/word'
-import { WordRepoMockImpl } from 'repositories/wordMock'
+import { QUIZ_COUNT, WordRepoImpl, Words } from 'repositories/word'
 import { initQuizState } from 'states/quiz'
 import { QuizActionType } from 'states/quiz/action'
 import { quizReducer } from 'states/quiz/reducer'
@@ -31,7 +30,7 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
   }, [])
 
   const handleSubmit = (values: AnswerFormValues) => {
-    // TODO:(nus3) nullだったらbuttonをdisabledにする
+    // HACK:(nus3) nullだったらbuttonをdisabledにする
     if (values.answer === '') return
 
     const currentQuiz = state.words[state.index]
@@ -75,6 +74,7 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
             collect={state.collect}
             onClickClose={handleCloseModal}
             open={state.open}
+            answers={state.currentAnswers}
           />
         </>
       ) : (
@@ -92,7 +92,7 @@ export default QuizPage
 
 export const getServerSideProps: GetServerSideProps<QuizPageProps> =
   async () => {
-    const repo = new WordRepoMockImpl()
+    const repo = new WordRepoImpl()
     const words = await repo.getRandomWords()
 
     return {

@@ -7,10 +7,14 @@ export const useModalContainer = ({
   onClickClose,
   collect,
   open,
+  answers,
 }: Params): ModalPresenterProps => {
+  const answerText = answers.join('、')
+
   return {
     onCloseModal: onClickClose,
     collect,
     open,
+    answerText,
   }
 }

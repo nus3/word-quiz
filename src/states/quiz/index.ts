@@ -8,6 +8,7 @@ export type QuizState = {
   results: boolean[]
   words: Word[]
   isAnswer: boolean
+  currentAnswers: string[]
 }
 
 export const initQuizState: QuizState = {
@@ -18,4 +19,5 @@ export const initQuizState: QuizState = {
   results: [],
   words: [],
   isAnswer: true,
+  currentAnswers: [],
 }

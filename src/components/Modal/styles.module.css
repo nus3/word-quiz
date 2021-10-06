@@ -3,9 +3,13 @@
 }
 
 .content {
-  @apply flex flex-col justify-center items-center gap-10 w-[300px] h-[300px] bg-bgBase text-2xl;
+  @apply flex flex-col justify-center items-center w-[300px] h-[300px] p-5 bg-bgBase text-2xl;
 }
 
 .text {
-  @apply text-accentYellow text-6xl font-bold;
+  @apply text-accentYellow text-5xl font-bold mb-5;
+}
+
+.answer {
+  @apply flex flex-col w-full text-textBase text-lg mb-10;
 }
