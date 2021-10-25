@@ -63,6 +63,23 @@
     {"word": "confident in", "answers": ["に自信がある"]},
     {"word": "opportunities to improve", "answers": ["発展のチャンス"]},
     {"word": "in particular", "answers": ["特に", "具体的には", "とりわけ"]},
-    {"word": "look forward to seeing", "answers": ["に会うのを楽しみにする"]}
+    {"word": "look forward to seeing", "answers": ["に会うのを楽しみにする"]},
+    {"word": "Imagine that", "answers": ["想像してみてください"]},
+    {"word": "day and night", "answers": ["四六時中", "連日連夜"]},
+    {"word": "relief", "answers": ["除去", "安心", "取り除くもの", "気晴らし"]},
+    {"word": "fill in", "answers": ["代わりを務める", "埋める", "記入する"]},
+    {"word": "instantly", "answers": ["すぐに", "すぐさま", "瞬時に"]},
+    {"word": "even if", "answers": ["たとえ〜だとしても"]},
+    {"word": "analogy for", "answers": ["の良い例え"]},
+    {"word": "take time", "answers": ["時間をかける"]},
+    {"word": "for instance", "answers": ["例えば"]},
+    {"word": "in terms of", "answers": ["の観点から"]},
+    {"word": "verbose", "answers": ["詳細"]},
+    {"word": "aware of", "answers": ["を知っている"]},
+    {"word": "not entirely", "answers": ["完全に〜というわけではない"]},
+    {"word": "care about", "answers": ["を大切にする", "を気にする", "に関心がある"]},
+    {"word": "unfortunately", "answers": ["不運にも", "不幸にも", "残念ながら", "あいにく"]},
+    {"word": "even though", "answers": ["にもかかわらず", "であるけれども", "たとえ〜としても"]},
+    {"word": "hand in hand", "answers": ["手を取り合って", "協力して", "関連して起こる"]}
   ]
 }
