@@ -80,6 +80,22 @@
     {"word": "care about", "answers": ["を大切にする", "を気にする", "に関心がある"]},
     {"word": "unfortunately", "answers": ["不運にも", "不幸にも", "残念ながら", "あいにく"]},
     {"word": "even though", "answers": ["にもかかわらず", "であるけれども", "たとえ〜としても"]},
-    {"word": "hand in hand", "answers": ["手を取り合って", "協力して", "関連して起こる"]}
+    {"word": "hand in hand", "answers": ["手を取り合って", "協力して", "関連して起こる"]},
+    {"word": "assuming", "answers": ["と仮定すれば"]},
+    {"word": "straight forward", "answers": ["真っ直ぐな", "明快な", "率直な", "簡単な"]},
+    {"word": "self explanatory", "answers": ["一目瞭然の", "自明の", "見ればすぐわかる"]},
+    {"word": "fully", "answers": ["十分に", "完全に", "全く", "すっかり"]},
+    {"word": "past decade", "answers": ["過去10年間"]},
+    {"word": "preserve", "answers": ["保存する", "保護する", "貯蔵する"]},
+    {"word": "loosely", "answers": ["ゆるく", "だらしなく", "締まりがなく", "大まかに"]},
+    {"word": "not just", "answers": ["単に〜のみならず", "ばかりでなく", "だけでなく"]},
+    {"word": "in order to", "answers": ["するために"]},
+    {"word": "side by side", "answers": ["並んで", "一緒に"]},
+    {"word": "guarantee", "answers": ["保証"]},
+    {"word": "prevent", "answers": ["防ぐ", "止める", "阻む"]},
+    {"word": "regardless of", "answers": ["にもかかわらず", "を気にせず", "に関係なく", "を問わず"]},
+    {"word": "roundup", "answers": ["総まとめ", "一斉逮捕"]},
+    {"word": "interoperable", "answers": ["相互運用可能な", "相互利用可能な"]},
+    {"word": "update on", "answers": ["の最新情報"]}
   ]
 }

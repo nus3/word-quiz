@@ -38,3 +38,6 @@ jobs:
 
       - name: ✅ Type check
         run: yarn typecheck
+
+      - name: 📝 Check words
+        run: yarn check-words
