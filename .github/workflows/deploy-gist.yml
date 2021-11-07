@@ -1,9 +1,9 @@
-name: Node CI
+name: Deploy gist
 on:
   pull_request:
-    branches: ['**']
-  push:
-    branches: [main]
+    branches:
+      - main
+    types: [closed]
 
 jobs:
   run_all:
@@ -23,21 +23,12 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-modules-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
 
+      - name: Set env
+        run: |
+          echo “GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}” >> $GITHUB_ENV
+
       - name: 📦 Install dependencies
         run: yarn install --immutable
 
-      - name: 🔨 Build
-        run: yarn build
-
-      - name: 💅🏼 Lint
-        run: yarn lint
-
-      # TODO:(nus3) テスト書く気になったら
-      # - name: 🚨 test
-      #   run: yarn test
-
-      - name: ✅ Type check
-        run: yarn typecheck
-
-      - name: 📝 Check words
-        run: yarn check-words
+      - name: 🛫 Deploy
+        run: yarn deploy-gist
