@@ -1,9 +1,14 @@
 name: Deploy gist
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#     types: [closed]
 on:
   pull_request:
-    branches:
-      - main
-    types: [closed]
+    branches: ['**']
+  push:
+    branches: [main]
 
 jobs:
   run_all:
@@ -25,7 +30,7 @@ jobs:
 
       - name: Set env
         run: |
-          echo “GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}” >> $GITHUB_ENV
+          echo "NUS3_GIST_TOKEN=${{ secrets.NUS3_GIST_TOKEN }}" >> $GITHUB_ENV
 
       - name: 📦 Install dependencies
         run: yarn install --immutable

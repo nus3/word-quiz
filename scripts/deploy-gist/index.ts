@@ -5,12 +5,12 @@ import words from '../../words.json'
 const GIST_ID = '8107d42ebf5205864f8825774f2acd95'
 const GIST_NAME = 'words.json'
 
-const { GITHUB_TOKEN } = process.env
+const { NUS3_GIST_TOKEN } = process.env
 
 const main = async () => {
   try {
     const client = new Octokit({
-      auth: GITHUB_TOKEN,
+      auth: NUS3_GIST_TOKEN,
     })
     await client.rest.gists.update({
       gist_id: GIST_ID,
@@ -25,6 +25,7 @@ const main = async () => {
     console.info('Completed update words')
   } catch (error) {
     console.error(error)
+    process.exit(1)
   }
 }
 
