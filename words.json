@@ -96,6 +96,7 @@
     {"word": "regardless of", "answers": ["にもかかわらず", "を気にせず", "に関係なく", "を問わず"]},
     {"word": "roundup", "answers": ["総まとめ", "一斉逮捕"]},
     {"word": "interoperable", "answers": ["相互運用可能な", "相互利用可能な"]},
+    {"word": "update on", "answers": ["の最新情報"]},
     {"word": "update on", "answers": ["の最新情報"]}
   ]
 }
