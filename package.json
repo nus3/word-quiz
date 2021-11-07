@@ -13,7 +13,8 @@
     "lint": "next lint",
     "typecheck": "tsc",
     "prepare": "husky install",
-    "check-words": "ts-node --project scripts/tsconfig.json scripts/check-words/index.ts"
+    "check-words": "ts-node --project scripts/tsconfig.json scripts/check-words/index.ts",
+    "deploy-gist": "ts-node --project scripts/tsconfig.json scripts/deploy-gist/index.ts"
   },
   "lint-staged": {
     "*.@(ts|tsx)": "bash -c tsc",
