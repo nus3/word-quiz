@@ -1,14 +1,9 @@
 name: Deploy gist
-# on:
-#   pull_request:
-#     branches:
-#       - main
-#     types: [closed]
 on:
   pull_request:
-    branches: ['**']
-  push:
-    branches: [main]
+    branches:
+      - main
+    types: [closed]
 
 jobs:
   run_all:
