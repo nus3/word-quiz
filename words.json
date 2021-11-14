@@ -96,6 +96,26 @@
     {"word": "regardless of", "answers": ["にもかかわらず", "を気にせず", "に関係なく", "を問わず"]},
     {"word": "roundup", "answers": ["総まとめ", "一斉逮捕"]},
     {"word": "interoperable", "answers": ["相互運用可能な", "相互利用可能な"]},
-    {"word": "update on", "answers": ["の最新情報"]}
+    {"word": "update on", "answers": ["の最新情報"]},
+    {"word": "seek to", "answers": ["しようとする", "努める", "努力する"]},
+    {"word": "initiative", "answers": ["自発力", "率先", "構想", "主導権"]},
+    {"word": "rely", "answers": ["を頼る", "を信頼する"]},
+    {"word": "make money from", "answers": ["でお金を儲ける"]},
+    {"word": "emerge", "answers": ["表面に出てくる", "現れる", "出現する"]},
+    {"word": "get up to date with", "answers": ["に遅れないようにする"]},
+    {"word": "grunt work", "answers": ["単調で辛い仕事"]},
+    {"word": "mess with", "answers": ["に干渉する", "に楯突く", "に関与する"]},
+    {"word": "regardless of", "answers": ["にかかわらず", "に関係なく", "を気にせず"]},
+    {"word": "through a lot", "answers": ["いろいろと苦労する", "苦労を重ねる"]},
+    {"word": "significant", "answers": ["重要な", "意味のある", "大幅な"]},
+    {"word": "exception", "answers": ["例外", "除外すること"]},
+    {"word": "make sure", "answers": ["確かめる", "確認する"]},
+    {"word": "in practice", "answers": ["実際にやってみると", "実際には"]},
+    {"word": "encapsulation", "answers": ["カプセル化"]},
+    {"word": "fidelity", "answers": ["忠誠", "忠実", "厳守"]},
+    {"word": "appropriate", "answers": ["適した", "適切な", "妥当な"]},
+    {"word": "derive", "answers": ["引き出す", "得る", "の由来をたどる", "抽出する"]},
+    {"word": "When in doubt", "answers": ["疑わしいときは", "疑わしきは"]},
+    {"word": "deviation", "answers": ["それること", "はずれること", "逸脱", "偏差", "偏向"]}
   ]
 }
