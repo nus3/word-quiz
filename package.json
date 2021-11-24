@@ -13,6 +13,7 @@
     "lint": "next lint",
     "typecheck": "tsc",
     "prepare": "husky install",
+    "get-words": "ts-node --project scripts/tsconfig.json scripts/get-words/index.ts",
     "check-words": "ts-node --project scripts/tsconfig.json scripts/check-words/index.ts",
     "deploy-gist": "ts-node --project scripts/tsconfig.json scripts/deploy-gist/index.ts"
   },
@@ -32,6 +33,7 @@
     "react-icons": "4.2.0"
   },
   "devDependencies": {
+    "@notionhq/client": "0.4.9",
     "@types/node": "16.10.2",
     "@types/react-dom": "17.0.9",
     "@typescript-eslint/eslint-plugin": "4.32.0",
