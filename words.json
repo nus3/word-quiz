@@ -253,6 +253,54 @@
     {
       "word": "except for",
       "answers": ["を除けば", "を別にすれば"]
+    },
+    {
+      "word": "figure out how to",
+      "answers": ["する方法をあれこれ考える"]
+    },
+    {
+      "word": "encyclopedia",
+      "answers": ["百科事典"]
+    },
+    {
+      "word": "sneak peek",
+      "answers": ["プレビュー"]
+    },
+    {
+      "word": "pitfall",
+      "answers": ["隠れた危険", "潜在的な危険", "落とし穴"]
+    },
+    {
+      "word": "fraction of",
+      "answers": ["のわずか"]
+    },
+    {
+      "word": "brevity",
+      "answers": ["簡潔さ", "短さ"]
+    },
+    {
+      "word": "proximity",
+      "answers": ["近いこと", "近接"]
+    },
+    {
+      "word": "neat",
+      "answers": ["整頓された", "整った", "きちんとした"]
+    },
+    {
+      "word": "surrounded by",
+      "answers": ["で取り込まれる", "に取り巻かれる", "の姿が目につく"]
+    },
+    {
+      "word": "fortunate",
+      "answers": ["幸運な", "幸先の良い"]
+    },
+    {
+      "word": "omit",
+      "answers": ["除く", "除外する", "含めない"]
+    },
+    {
+      "word": "accomplish",
+      "answers": ["成し遂げる", "遂行する", "果たす", "完遂する"]
     }
   ]
 }
