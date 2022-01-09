@@ -301,6 +301,50 @@
     {
       "word": "accomplish",
       "answers": ["成し遂げる", "遂行する", "果たす", "完遂する"]
+    },
+    {
+      "word": "line between",
+      "answers": ["境界線", "〜間の一線"]
+    },
+    {
+      "word": "denote",
+      "answers": ["を意味する", "を示す"]
+    },
+    {
+      "word": "look for",
+      "answers": ["を探す"]
+    },
+    {
+      "word": "fan out",
+      "answers": ["広がる", "四方八方に散る"]
+    },
+    {
+      "word": "pluggable",
+      "answers": ["プラグ着脱可能な"]
+    },
+    {
+      "word": "plenty of",
+      "answers": ["たくさんの"]
+    },
+    {
+      "word": "reliable",
+      "answers": ["信頼できる", "頼りになる", "信用できる"]
+    },
+    {
+      "word": "synonymous with",
+      "answers": ["と同じ意味の", "と同義で"]
+    },
+    {
+      "word": "awkward",
+      "answers": ["扱いにくい", "不器用な", "気まずくさせる"]
+    },
+    {
+      "word": "distill",
+      "answers": ["抽出する", "蒸留する"]
+    },
+    {
+      "word": "awareness",
+      "answers": ["気づいていること", "目覚め", "認知"]
     }
   ]
 }
