@@ -345,6 +345,58 @@
     {
       "word": "awareness",
       "answers": ["気づいていること", "目覚め", "認知"]
+    },
+    {
+      "word": "tons of",
+      "answers": ["たくさんの", "大量の", "山ほどの"]
+    },
+    {
+      "word": "simply put",
+      "answers": ["簡単に言えば"]
+    },
+    {
+      "word": "uncover",
+      "answers": ["発見する", "明らかにする", "からカバーを取る"]
+    },
+    {
+      "word": "iron out",
+      "answers": ["解決する", "アイロンをかけて伸ばす"]
+    },
+    {
+      "word": "over the course of",
+      "answers": ["のうちに", "の間に", "にわたって"]
+    },
+    {
+      "word": "likewise",
+      "answers": ["同じく", "同様に", "その上に", "さらに"]
+    },
+    {
+      "word": "above",
+      "answers": ["上方に", "上記の", "上側に"]
+    },
+    {
+      "word": "properly",
+      "answers": ["適切に", "ちゃんと", "きっちりと"]
+    },
+    {
+      "word": "implicit",
+      "answers": ["暗黙の", "絶対の", "潜在的な", "陰の"]
+    },
+    {
+      "word": "speak for themselves",
+      "answers": ["自明の理である", "分かる"]
+    },
+    {
+      "word": "depending on",
+      "answers": ["次第で", "に応じて", "によって"]
+    },
+    {
+      "word": "mathematical term",
+      "answers": ["数学用語"]
+    },
+    {
+      "word": "glossary",
+      "answers": ["用語集"]
     }
   ]
 }
