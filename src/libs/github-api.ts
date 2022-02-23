@@ -5,8 +5,10 @@ const gistName = 'words.json'
 
 // HACK:(nus3) infra層のinterfaceを定義する
 
+const { GIST_TOKEN } = process.env
+
 export const getGistContent = async (): Promise<string> => {
-  const client = new Octokit()
+  const client = new Octokit({ auth: GIST_TOKEN })
   const res = await client.request('GET /gists/{gist_id}', {
     gist_id,
   })
