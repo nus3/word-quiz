@@ -7,3 +7,10 @@
     @apply font text-textBase bg-bgBase;
   }
 }
+
+/* html {
+  visibility: hidden;
+}
+html.wf-active {
+  visibility: visible;
+} */
