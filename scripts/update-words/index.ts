@@ -1,4 +1,8 @@
 import { Client } from '@notionhq/client'
+import { execSync } from 'node:child_process'
+import { writeFileSync } from 'node:fs'
+
+import data from '../../words.json'
 
 const { NOTION_SECRETS, NOTION_DATABASE_ID } = process.env
 
@@ -14,7 +18,7 @@ const main = async () => {
     })
 
     const properties = res.results.map((r) => r.properties)
-    const values = properties.map((p) => {
+    const newWords = properties.map((p) => {
       const means = p.mean['rich_text'] as Array<Property>
       const meanValues = means.map((m) => m.plain_text)
 
@@ -29,7 +33,13 @@ const main = async () => {
         answers: toMeans,
       }
     })
-    console.info(JSON.stringify(values, null, 2))
+
+    const words = data.words.concat(newWords)
+    data.words = words
+    writeFileSync('./words.json', JSON.stringify(data, null, 2))
+    execSync('yarn prettier ./words.json --write', { stdio: 'inherit' })
+
+    console.info('正常にwordsを更新したよ')
   } catch (error) {
     console.error(error)
     process.exit(1)
