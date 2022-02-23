@@ -1,34 +1,41 @@
-import { NextPage, GetServerSideProps } from 'next'
+import { NextPage } from 'next'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 import { useEffect, useReducer } from 'react'
+import { useQuery } from 'react-query'
 
 import { AnswerForm, AnswerFormValues } from 'components/AnswerForm'
 import { Layout } from 'components/Layout'
 import { Modal } from 'components/Modal'
 import { ResultContent } from 'components/ResultContent'
 
-import { QUIZ_COUNT, WordRepoImpl, Words } from 'repositories/word'
+import { QUIZ_COUNT, Words } from 'repositories/word'
 import { initQuizState } from 'states/quiz'
 import { QuizActionType } from 'states/quiz/action'
 import { quizReducer } from 'states/quiz/reducer'
 
-type QuizPageProps = {
-  words: Words
-}
+// type QuizPageProps = {
+//   words: Words
+// }
 
-const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
+const QuizPage: NextPage = () => {
+  const { data, isLoading } = useQuery<Words>('words', async () => {
+    const res = await fetch('/api/words/random')
+    const data = await res.json()
+    return data
+  })
+
   const [state, dispatch] = useReducer(quizReducer, initQuizState)
 
-  const { push } = useRouter()
-
   useEffect(() => {
+    if (isLoading) return
+
     dispatch({
       type: QuizActionType.InitialLoad,
-      payload: { words: words.words },
+      payload: { words: data.words },
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [isLoading])
 
   const handleSubmit = (values: AnswerFormValues) => {
     // HACK:(nus3) nullだったらbuttonをdisabledにする
@@ -64,6 +71,7 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
     })
   }
 
+  const { push } = useRouter()
   const handleBack = () => {
     push('/')
   }
@@ -106,14 +114,14 @@ const QuizPage: NextPage<QuizPageProps> = ({ words }) => {
 
 export default QuizPage
 
-export const getServerSideProps: GetServerSideProps<QuizPageProps> =
-  async () => {
-    const repo = new WordRepoImpl()
-    const words = await repo.getRandomWords()
+// export const getServerSideProps: GetServerSideProps<QuizPageProps> =
+//   async () => {
+//     const repo = new WordRepoImpl()
+//     const words = await repo.getRandomWords()
 
-    return {
-      props: {
-        words,
-      },
-    }
-  }
+//     return {
+//       props: {
+//         words,
+//       },
+//     }
+//   }

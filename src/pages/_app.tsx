@@ -4,6 +4,9 @@ import 'styles/normalize.css'
 import { NextPage } from 'next'
 import { DefaultSeo } from 'next-seo'
 import { AppProps } from 'next/app'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
   <>
@@ -12,7 +15,9 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => (
       defaultTitle="タンゴ"
       description="タンゴはnus3が英語を習慣的に覚えるための英単語クイズのアプリです"
     />
-    <Component {...pageProps} />
+    <QueryClientProvider client={queryClient}>
+      <Component {...pageProps} />
+    </QueryClientProvider>
   </>
 )
 

@@ -8,22 +8,46 @@
       "word": "continuous",
       "answers": ["連続的な", "切れ目のない", "とぎれない"]
     },
-    { "word": "disregard", "answers": ["無視する", "軽視する"] },
-    { "word": "enclose", "answers": ["取り囲む", "囲む", "囲い込む"] },
-    { "word": "revenue", "answers": ["収入", "総所得", "国税庁"] },
+    {
+      "word": "disregard",
+      "answers": ["無視する", "軽視する"]
+    },
+    {
+      "word": "enclose",
+      "answers": ["取り囲む", "囲む", "囲い込む"]
+    },
+    {
+      "word": "revenue",
+      "answers": ["収入", "総所得", "国税庁"]
+    },
     {
       "word": "readily",
       "answers": ["快く", "躊躇なく", "ちゅうちょなく", "容易に"]
     },
-    { "word": "identify", "answers": ["確認する", "見分ける", "証明する"] },
-    { "word": "scatter", "answers": ["ばら撒く", "散財する", "撒き散らす"] },
-    { "word": "consolidate", "answers": ["統合する", "固める", "強化する"] },
+    {
+      "word": "identify",
+      "answers": ["確認する", "見分ける", "証明する"]
+    },
+    {
+      "word": "scatter",
+      "answers": ["ばら撒く", "散財する", "撒き散らす"]
+    },
+    {
+      "word": "consolidate",
+      "answers": ["統合する", "固める", "強化する"]
+    },
     {
       "word": "whenever",
       "answers": ["する時にはいつも", "する時には必ず", "するたびに"]
     },
-    { "word": "tweak", "answers": ["ひねる", "つねる"] },
-    { "word": "mostly", "answers": ["大部分は", "たいてい", "たいていは"] },
+    {
+      "word": "tweak",
+      "answers": ["ひねる", "つねる"]
+    },
+    {
+      "word": "mostly",
+      "answers": ["大部分は", "たいてい", "たいていは"]
+    },
     {
       "word": "curios",
       "answers": ["好奇心の強い", "もの好きな", "せんさく好きな", "したがって"]
@@ -36,7 +60,10 @@
       "word": "compartmentalize",
       "answers": ["区分する", "仕切る", "区画に分ける"]
     },
-    { "word": "describe", "answers": ["述べる", "説明する"] },
+    {
+      "word": "describe",
+      "answers": ["述べる", "説明する"]
+    },
     {
       "word": "spark the idea",
       "answers": ["考えをひらめかせる", "アイデアをひらめかせる"]
@@ -45,19 +72,34 @@
       "word": "stem from",
       "answers": ["から生じる", "から起こる", "が原因である"]
     },
-    { "word": "cumbersome", "answers": ["扱いにくい", "面倒な", "厄介な"] },
+    {
+      "word": "cumbersome",
+      "answers": ["扱いにくい", "面倒な", "厄介な"]
+    },
     {
       "word": "bring",
       "answers": ["持ってくる", "持っていく", "連れてくる", "連れていく"]
     },
-    { "word": "and then", "answers": ["それから", "その後", "その上"] },
+    {
+      "word": "and then",
+      "answers": ["それから", "その後", "その上"]
+    },
     {
       "word": "sophisticated",
       "answers": ["洗練された", "教養のある", "あか抜けた"]
     },
-    { "word": "alongside", "answers": ["と並行に", "と一緒に", "と同時に"] },
-    { "word": "integral part of", "answers": ["の不可欠な部分"] },
-    { "word": "appealing", "answers": ["魅力的な", "好ましい"] },
+    {
+      "word": "alongside",
+      "answers": ["と並行に", "と一緒に", "と同時に"]
+    },
+    {
+      "word": "integral part of",
+      "answers": ["の不可欠な部分"]
+    },
+    {
+      "word": "appealing",
+      "answers": ["魅力的な", "好ましい"]
+    },
     {
       "word": "eventually",
       "answers": ["最終的に", "結局", "ついに", "いつかは"]
@@ -66,77 +108,206 @@
       "word": "demanding",
       "answers": ["要求の厳しい", "要求のきつい", "注文の多い", "手のかかる"]
     },
-    { "word": "instead of", "answers": ["の代わりに", "せずに", "ではなくて"] },
+    {
+      "word": "instead of",
+      "answers": ["の代わりに", "せずに", "ではなくて"]
+    },
     {
       "word": "struggle",
       "answers": ["奮闘する", "取り組む", "もがく", "あがく"]
     },
-    { "word": "decision", "answers": ["決定", "決断", "決心"] },
-    { "word": "smooth sailing", "answers": ["順風満帆"] },
-    { "word": "work on", "answers": ["取り組む", "取り掛かる", "従事する"] },
-    { "word": "adopt", "answers": ["選ぶ", "採択する", "選定する"] },
-    { "word": "right away", "answers": ["すぐに", "直ちに"] },
-    { "word": "proved to be", "answers": ["であることが判明する"] },
-    { "word": "complicate", "answers": ["複雑にする", "困難にする"] },
-    { "word": "interoperability", "answers": ["相互運用"] },
-    { "word": "specifically for", "answers": ["専用に"] },
-    { "word": "tremendous amount of", "answers": ["途方もない数の"] },
-    { "word": "compensate for", "answers": ["を償う", "を相殺する"] },
-    { "word": "embed", "answers": ["埋め込む", "組み込む", "はめ込む"] },
-    { "word": "familiarity with", "answers": ["に熟知していること"] },
-    { "word": "deal", "answers": ["扱う", "対処する", "行動する"] },
-    { "word": "along with", "answers": ["と一緒に", "とともに", "と連動して"] },
-    { "word": "strengths and limitations", "answers": ["長所と短所"] },
+    {
+      "word": "decision",
+      "answers": ["決定", "決断", "決心"]
+    },
+    {
+      "word": "smooth sailing",
+      "answers": ["順風満帆"]
+    },
+    {
+      "word": "work on",
+      "answers": ["取り組む", "取り掛かる", "従事する"]
+    },
+    {
+      "word": "adopt",
+      "answers": ["選ぶ", "採択する", "選定する"]
+    },
+    {
+      "word": "right away",
+      "answers": ["すぐに", "直ちに"]
+    },
+    {
+      "word": "proved to be",
+      "answers": ["であることが判明する"]
+    },
+    {
+      "word": "complicate",
+      "answers": ["複雑にする", "困難にする"]
+    },
+    {
+      "word": "interoperability",
+      "answers": ["相互運用"]
+    },
+    {
+      "word": "specifically for",
+      "answers": ["専用に"]
+    },
+    {
+      "word": "tremendous amount of",
+      "answers": ["途方もない数の"]
+    },
+    {
+      "word": "compensate for",
+      "answers": ["を償う", "を相殺する"]
+    },
+    {
+      "word": "embed",
+      "answers": ["埋め込む", "組み込む", "はめ込む"]
+    },
+    {
+      "word": "familiarity with",
+      "answers": ["に熟知していること"]
+    },
+    {
+      "word": "deal",
+      "answers": ["扱う", "対処する", "行動する"]
+    },
+    {
+      "word": "along with",
+      "answers": ["と一緒に", "とともに", "と連動して"]
+    },
+    {
+      "word": "strengths and limitations",
+      "answers": ["長所と短所"]
+    },
     {
       "word": "whenever possible",
       "answers": ["いつでも可能な限り", "できる限り", "なるべく"]
     },
-    { "word": "so that", "answers": ["〜できるように"] },
-    { "word": "overcome", "answers": ["克服する", "乗り越える", "圧倒する"] },
+    {
+      "word": "so that",
+      "answers": ["〜できるように"]
+    },
+    {
+      "word": "overcome",
+      "answers": ["克服する", "乗り越える", "圧倒する"]
+    },
     {
       "word": "much more",
       "answers": ["さらに多くの", "ましてや", "なおさら"]
     },
-    { "word": "pleasant", "answers": ["楽しい", "愉快な"] },
-    { "word": "underestimate", "answers": ["低く見積もる"] },
-    { "word": "great deal", "answers": ["たくさんの量", "多量"] },
+    {
+      "word": "pleasant",
+      "answers": ["楽しい", "愉快な"]
+    },
+    {
+      "word": "underestimate",
+      "answers": ["低く見積もる"]
+    },
+    {
+      "word": "great deal",
+      "answers": ["たくさんの量", "多量"]
+    },
     {
       "word": "compared with",
       "answers": ["と比較して", "と比べると", "に比べて"]
     },
-    { "word": "in general", "answers": ["一般に"] },
-    { "word": "unlike", "answers": ["とは異なって", "とは違って"] },
-    { "word": "achieve", "answers": ["獲得する", "得る"] },
+    {
+      "word": "in general",
+      "answers": ["一般に"]
+    },
+    {
+      "word": "unlike",
+      "answers": ["とは異なって", "とは違って"]
+    },
+    {
+      "word": "achieve",
+      "answers": ["獲得する", "得る"]
+    },
     {
       "word": "otherwise",
       "answers": ["さもなければ", "そうしないと", "そうでなければ"]
     },
-    { "word": "that said", "answers": ["そうは言っても", "とはいえ"] },
+    {
+      "word": "that said",
+      "answers": ["そうは言っても", "とはいえ"]
+    },
     {
       "word": "comfortable with",
       "answers": ["に満足している", "に対して安心している"]
     },
-    { "word": "quite", "answers": ["かなり", "非常に", "全く"] },
-    { "word": "confident in", "answers": ["に自信がある"] },
-    { "word": "opportunities to improve", "answers": ["発展のチャンス"] },
-    { "word": "in particular", "answers": ["特に", "具体的には", "とりわけ"] },
-    { "word": "look forward to seeing", "answers": ["に会うのを楽しみにする"] },
-    { "word": "Imagine that", "answers": ["想像してみてください"] },
-    { "word": "day and night", "answers": ["四六時中", "連日連夜"] },
+    {
+      "word": "quite",
+      "answers": ["かなり", "非常に", "全く"]
+    },
+    {
+      "word": "confident in",
+      "answers": ["に自信がある"]
+    },
+    {
+      "word": "opportunities to improve",
+      "answers": ["発展のチャンス"]
+    },
+    {
+      "word": "in particular",
+      "answers": ["特に", "具体的には", "とりわけ"]
+    },
+    {
+      "word": "look forward to seeing",
+      "answers": ["に会うのを楽しみにする"]
+    },
+    {
+      "word": "Imagine that",
+      "answers": ["想像してみてください"]
+    },
+    {
+      "word": "day and night",
+      "answers": ["四六時中", "連日連夜"]
+    },
     {
       "word": "relief",
       "answers": ["除去", "安心", "取り除くもの", "気晴らし"]
     },
-    { "word": "fill in", "answers": ["代わりを務める", "埋める", "記入する"] },
-    { "word": "instantly", "answers": ["すぐに", "すぐさま", "瞬時に"] },
-    { "word": "even if", "answers": ["たとえ〜だとしても"] },
-    { "word": "analogy for", "answers": ["の良い例え"] },
-    { "word": "take time", "answers": ["時間をかける"] },
-    { "word": "for instance", "answers": ["例えば"] },
-    { "word": "in terms of", "answers": ["の観点から"] },
-    { "word": "verbose", "answers": ["詳細"] },
-    { "word": "aware of", "answers": ["を知っている"] },
-    { "word": "not entirely", "answers": ["完全に〜というわけではない"] },
+    {
+      "word": "fill in",
+      "answers": ["代わりを務める", "埋める", "記入する"]
+    },
+    {
+      "word": "instantly",
+      "answers": ["すぐに", "すぐさま", "瞬時に"]
+    },
+    {
+      "word": "even if",
+      "answers": ["たとえ〜だとしても"]
+    },
+    {
+      "word": "analogy for",
+      "answers": ["の良い例え"]
+    },
+    {
+      "word": "take time",
+      "answers": ["時間をかける"]
+    },
+    {
+      "word": "for instance",
+      "answers": ["例えば"]
+    },
+    {
+      "word": "in terms of",
+      "answers": ["の観点から"]
+    },
+    {
+      "word": "verbose",
+      "answers": ["詳細"]
+    },
+    {
+      "word": "aware of",
+      "answers": ["を知っている"]
+    },
+    {
+      "word": "not entirely",
+      "answers": ["完全に〜というわけではない"]
+    },
     {
       "word": "care about",
       "answers": ["を大切にする", "を気にする", "に関心がある"]
@@ -153,7 +324,10 @@
       "word": "hand in hand",
       "answers": ["手を取り合って", "協力して", "関連して起こる"]
     },
-    { "word": "assuming", "answers": ["と仮定すれば"] },
+    {
+      "word": "assuming",
+      "answers": ["と仮定すれば"]
+    },
     {
       "word": "straight forward",
       "answers": ["真っ直ぐな", "明快な", "率直な", "簡単な"]
@@ -162,9 +336,18 @@
       "word": "self explanatory",
       "answers": ["一目瞭然の", "自明の", "見ればすぐわかる"]
     },
-    { "word": "fully", "answers": ["十分に", "完全に", "全く", "すっかり"] },
-    { "word": "past decade", "answers": ["過去10年間"] },
-    { "word": "preserve", "answers": ["保存する", "保護する", "貯蔵する"] },
+    {
+      "word": "fully",
+      "answers": ["十分に", "完全に", "全く", "すっかり"]
+    },
+    {
+      "word": "past decade",
+      "answers": ["過去10年間"]
+    },
+    {
+      "word": "preserve",
+      "answers": ["保存する", "保護する", "貯蔵する"]
+    },
     {
       "word": "loosely",
       "answers": ["ゆるく", "だらしなく", "締まりがなく", "大まかに"]
@@ -173,27 +356,66 @@
       "word": "not just",
       "answers": ["単に〜のみならず", "ばかりでなく", "だけでなく"]
     },
-    { "word": "in order to", "answers": ["するために"] },
-    { "word": "side by side", "answers": ["並んで", "一緒に"] },
-    { "word": "guarantee", "answers": ["保証"] },
-    { "word": "prevent", "answers": ["防ぐ", "止める", "阻む"] },
+    {
+      "word": "in order to",
+      "answers": ["するために"]
+    },
+    {
+      "word": "side by side",
+      "answers": ["並んで", "一緒に"]
+    },
+    {
+      "word": "guarantee",
+      "answers": ["保証"]
+    },
+    {
+      "word": "prevent",
+      "answers": ["防ぐ", "止める", "阻む"]
+    },
     {
       "word": "regardless of",
       "answers": ["にもかかわらず", "を気にせず", "に関係なく", "を問わず"]
     },
-    { "word": "roundup", "answers": ["総まとめ", "一斉逮捕"] },
+    {
+      "word": "roundup",
+      "answers": ["総まとめ", "一斉逮捕"]
+    },
     {
       "word": "interoperable",
       "answers": ["相互運用可能な", "相互利用可能な"]
     },
-    { "word": "update on", "answers": ["の最新情報"] },
-    { "word": "seek to", "answers": ["しようとする", "努める", "努力する"] },
-    { "word": "initiative", "answers": ["自発力", "率先", "構想", "主導権"] },
-    { "word": "rely", "answers": ["を頼る", "を信頼する"] },
-    { "word": "make money from", "answers": ["でお金を儲ける"] },
-    { "word": "emerge", "answers": ["表面に出てくる", "現れる", "出現する"] },
-    { "word": "get up to date with", "answers": ["に遅れないようにする"] },
-    { "word": "grunt work", "answers": ["単調で辛い仕事"] },
+    {
+      "word": "update on",
+      "answers": ["の最新情報"]
+    },
+    {
+      "word": "seek to",
+      "answers": ["しようとする", "努める", "努力する"]
+    },
+    {
+      "word": "initiative",
+      "answers": ["自発力", "率先", "構想", "主導権"]
+    },
+    {
+      "word": "rely",
+      "answers": ["を頼る", "を信頼する"]
+    },
+    {
+      "word": "make money from",
+      "answers": ["でお金を儲ける"]
+    },
+    {
+      "word": "emerge",
+      "answers": ["表面に出てくる", "現れる", "出現する"]
+    },
+    {
+      "word": "get up to date with",
+      "answers": ["に遅れないようにする"]
+    },
+    {
+      "word": "grunt work",
+      "answers": ["単調で辛い仕事"]
+    },
     {
       "word": "mess with",
       "answers": ["に干渉する", "に楯突く", "に関与する"]
@@ -202,18 +424,42 @@
       "word": "through a lot",
       "answers": ["いろいろと苦労する", "苦労を重ねる"]
     },
-    { "word": "significant", "answers": ["重要な", "意味のある", "大幅な"] },
-    { "word": "exception", "answers": ["例外", "除外すること"] },
-    { "word": "make sure", "answers": ["確かめる", "確認する"] },
-    { "word": "in practice", "answers": ["実際にやってみると", "実際には"] },
-    { "word": "encapsulation", "answers": ["カプセル化"] },
-    { "word": "fidelity", "answers": ["忠誠", "忠実", "厳守"] },
-    { "word": "appropriate", "answers": ["適した", "適切な", "妥当な"] },
+    {
+      "word": "significant",
+      "answers": ["重要な", "意味のある", "大幅な"]
+    },
+    {
+      "word": "exception",
+      "answers": ["例外", "除外すること"]
+    },
+    {
+      "word": "make sure",
+      "answers": ["確かめる", "確認する"]
+    },
+    {
+      "word": "in practice",
+      "answers": ["実際にやってみると", "実際には"]
+    },
+    {
+      "word": "encapsulation",
+      "answers": ["カプセル化"]
+    },
+    {
+      "word": "fidelity",
+      "answers": ["忠誠", "忠実", "厳守"]
+    },
+    {
+      "word": "appropriate",
+      "answers": ["適した", "適切な", "妥当な"]
+    },
     {
       "word": "derive",
       "answers": ["引き出す", "得る", "の由来をたどる", "抽出する"]
     },
-    { "word": "When in doubt", "answers": ["疑わしいときは", "疑わしきは"] },
+    {
+      "word": "When in doubt",
+      "answers": ["疑わしいときは", "疑わしきは"]
+    },
     {
       "word": "deviation",
       "answers": ["それること", "はずれること", "逸脱", "偏差", "偏向"]
@@ -397,6 +643,66 @@
     {
       "word": "glossary",
       "answers": ["用語集"]
+    },
+    {
+      "word": "forbid",
+      "answers": ["禁じる", "禁止する", "妨げる"]
+    },
+    {
+      "word": "as a way of",
+      "answers": ["の一手段として"]
+    },
+    {
+      "word": "embark on",
+      "answers": ["に乗り出す", "に着手する"]
+    },
+    {
+      "word": "Because of this",
+      "answers": ["そんな訳で"]
+    },
+    {
+      "word": "worthwhile",
+      "answers": ["価値のある"]
+    },
+    {
+      "word": "put together",
+      "answers": ["組み立てる", "編集する", "まとめる"]
+    },
+    {
+      "word": "pan out",
+      "answers": ["砂金が出る", "成功する", "報われる"]
+    },
+    {
+      "word": "pseudo",
+      "answers": ["疑似"]
+    },
+    {
+      "word": "honest-to-goodness",
+      "answers": ["本当の", "正真正銘の"]
+    },
+    {
+      "word": "simultaneously",
+      "answers": ["同時に"]
+    },
+    {
+      "word": "gnash",
+      "answers": ["歯ぎしりする"]
+    },
+    {
+      "word": "wail",
+      "answers": ["うめき声をあげる", "を嘆く", "泣き叫ぶ"]
+    },
+    {
+      "word": "pretty much",
+      "answers": ["ほとんど", "ほぼ", "大体"]
+    },
+    {
+      "word": "seriously",
+      "answers": ["真面目に", "真剣に", "重大に"]
+    },
+    {
+      "word": "idiomatic",
+      "answers": ["慣用的な", "母語話者が自然に使う"]
     }
   ]
 }
