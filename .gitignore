@@ -43,3 +43,8 @@ yarn-error.log*
 
 # env
 .envrc
+
+# next-pwa
+public/workbox**
+public/sw**
+public/fallback**
