@@ -14,6 +14,9 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />
+          <meta name="theme-color" content="#FFD369" />
+          <link rel="manifest" href="/manifest.webmanifest" />
+          <link rel="apple-touch-icon" href="/icon-192x192.png" />
         </Head>
         <body>
           <Main />
